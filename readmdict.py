@@ -653,7 +653,7 @@ if __name__ == '__main__':
         print('======== %s ========' % bfname)
         print('  Number of Entries : %d' % len(mdx))
         for key, value in mdx.header.items():
-            print('  %s : %s' % (key, value))
+            print('  %s : %s' % (key.decode('utf-8'), value.decode('utf-8')))
     else:
         mdx = None
 
@@ -668,7 +668,7 @@ if __name__ == '__main__':
         print('======== %s ========' % bfname)
         print('  Number of Entries : %d' % len(mdd))
         for key, value in mdd.header.items():
-            print('  %s : %s' % (key, value))
+            print('  %s : %s' % (key.decode('utf-8'), value.decode('utf-8')))
     else:
         mdd = None
 
