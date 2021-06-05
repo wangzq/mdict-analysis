@@ -623,7 +623,7 @@ if __name__ == '__main__':
     parser.add_argument('-d', '--datafolder', default="data",
                         help='folder to extract data files from mdd')
     parser.add_argument('-e', '--encoding', default="",
-                        help='folder to extract data files from mdd')
+                        help='override encoding')
     parser.add_argument('-p', '--passcode', default=None, type=passcode,
                         help='register_code,email_or_deviceid')
     parser.add_argument("filename", nargs='?', help="mdx file name")
